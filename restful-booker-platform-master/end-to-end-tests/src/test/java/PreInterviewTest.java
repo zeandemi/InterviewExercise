@@ -51,7 +51,7 @@ public class PreInterviewTest extends TestSetup{
                 .PopulateEmail(hotel.getContact().getEmail())
                 .ClickCreateHotel().DeleteHotelEntry();
 
-        Assert.assertThat(hotelListingPage.ReadHotelName(hotelListingPage.HotelCount()), is(equalTo(hotel.getName())));
+        Assert.assertThat(hotelListingPage.ReadHotelName(hotelListingPage.HotelCount()), is(equalTo(null)));
     }
 
 

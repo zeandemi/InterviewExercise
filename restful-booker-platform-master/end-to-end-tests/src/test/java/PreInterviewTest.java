@@ -15,7 +15,6 @@ public class PreInterviewTest extends TestSetup{
     {
         Hotel hotel = new Hotel("Richards Beach", "1 Richard Street", new Contact("Richard B", "07845745745", "rb456@rb.com"));
 
-
         driver.navigate().to(baseUrl);
         HotelListingPage hotelListingPage = new NavigationPage(driver)
                 .ClickLogin()
@@ -66,7 +65,6 @@ public class PreInterviewTest extends TestSetup{
         hotels.add(hotel2);
 
         for(Hotel hotel: hotels){
-
             driver.navigate().to(baseUrl);
             HotelListingPage hotelListingPage = new NavigationPage(driver)
                     .ClickLogin()
